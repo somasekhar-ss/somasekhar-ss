@@ -1,0 +1,76 @@
+<svg width="900" height="320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #070b12; }
+      .panel { fill: #090f1a; stroke: #0e2235; stroke-width: 1; }
+      .q-panel { fill: #06080f; stroke: #0e2235; stroke-width: 1; }
+      .q-panel-s { fill: #06080f; stroke: #b8821e; stroke-width: 0.5; }
+      .q-panel-a { fill: #06080f; stroke: #1e6b9c; stroke-width: 0.5; }
+      .q-panel-b { fill: #06080f; stroke: #1a5a3a; stroke-width: 0.5; }
+      .label { font-family: 'Share Tech Mono', 'Courier New', monospace;
+        font-size: 9px; letter-spacing: 4px; fill: #1a4a6a; }
+      .q-rank-s { font-family: 'Share Tech Mono', 'Courier New', monospace;
+        font-size: 9px; fill: #b8821e; letter-spacing: 3px; }
+      .q-rank-a { font-family: 'Share Tech Mono', 'Courier New', monospace;
+        font-size: 9px; fill: #1e6b9c; letter-spacing: 3px; }
+      .q-rank-b { font-family: 'Share Tech Mono', 'Courier New', monospace;
+        font-size: 9px; fill: #1a6a3a; letter-spacing: 3px; }
+      .q-title { font-family: 'Share Tech Mono', 'Courier New', monospace;
+        font-size: 14px; fill: #c8d8e4; }
+      .q-desc { font-family: 'Share Tech Mono', 'Courier New', monospace;
+        font-size: 9px; fill: #2a4a5a; }
+      .corner { fill: none; stroke: #1e6b9c; stroke-width: 1; }
+      .divider { stroke: #0e2235; stroke-width: 1; }
+      .q1 { opacity: 0; animation: slide-in 0.5s 0.3s ease forwards; }
+      .q2 { opacity: 0; animation: slide-in 0.5s 0.6s ease forwards; }
+      .q3 { opacity: 0; animation: slide-in 0.5s 0.9s ease forwards; }
+      .accent-left-s { fill: #b8821e; }
+      .accent-left-a { fill: #1e6b9c; }
+      .accent-left-b { fill: #1a6a3a; }
+
+      @keyframes slide-in {
+        from { opacity: 0; transform: translateX(-8px); }
+        to { opacity: 1; transform: translateX(0); }
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="320" class="bg"/>
+  <rect x="20" y="20" width="860" height="280" rx="2" class="panel"/>
+
+  <!-- Corner accents -->
+  <polyline points="20,38 20,20 38,20" class="corner"/>
+  <polyline points="862,38 862,20 844,20" class="corner"/>
+  <polyline points="20,282 20,300 38,300" class="corner"/>
+  <polyline points="862,282 862,300 844,300" class="corner"/>
+
+  <text x="40" y="48" class="label">[ 04 · ACTIVE QUESTS ]</text>
+  <line x1="40" y1="58" x2="860" y2="58" class="divider"/>
+
+  <!-- Quest 1: S-rank -->
+  <g class="q1">
+    <rect x="40" y="68" width="820" height="66" rx="1" class="q-panel-s"/>
+    <rect x="40" y="68" width="3" height="66" class="accent-left-s"/>
+    <text x="54" y="86" class="q-rank-s">[ S-RANK · IN PROGRESS ]</text>
+    <text x="54" y="104" class="q-title">Master the Backend Domain</text>
+    <text x="54" y="122" class="q-desc">Deep-diving Spring Boot internals, system design patterns, and scalable architecture. Hire-ready engineering.</text>
+  </g>
+
+  <!-- Quest 2: A-rank -->
+  <g class="q2">
+    <rect x="40" y="144" width="820" height="66" rx="1" class="q-panel-a"/>
+    <rect x="40" y="144" width="3" height="66" class="accent-left-a"/>
+    <text x="54" y="162" class="q-rank-a">[ A-RANK · ONGOING ]</text>
+    <text x="54" y="180" class="q-title">DSA Grind — 300 Problems</text>
+    <text x="54" y="198" class="q-desc">Arrays to Graphs to DP. Daily solves on LeetCode + GeeksForGeeks. Rising from zero to hero, one problem at a time.</text>
+  </g>
+
+  <!-- Quest 3: B-rank -->
+  <g class="q3">
+    <rect x="40" y="220" width="820" height="66" rx="1" class="q-panel-b"/>
+    <rect x="40" y="220" width="3" height="66" class="accent-left-b"/>
+    <text x="54" y="238" class="q-rank-b">[ B-RANK · ACTIVE ]</text>
+    <text x="54" y="256" class="q-title">Full-Stack Project Build</text>
+    <text x="54" y="274" class="q-desc">Crafting real-world Spring Boot + React apps — REST APIs, auth, database design. End to end. No tutorials. Real code.</text>
+  </g>
+</svg>

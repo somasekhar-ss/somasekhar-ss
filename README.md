@@ -1,16 +1,21 @@
-## Hi there 👋
+# <p align="center">👋 Hi, I'm YOUR Soma Sekhar</p>
+<p align="center">
+  <b>FULL-STACK BUILDER • AI EXPLORER • CS UNDERGRAD</b>
+</p>
 
-<!--
-**somasekhar-ss/somasekhar-ss** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  <img src="https://img.shields.io/badge/Profile_Views-100+-purple?style=flat-square" alt="Views">
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 💻 About Me
+
+```json
+{
+  "name": "Maddineni Soma Sekhar",
+  "role": "Java Full-Stack Builder | AI Explorer",
+  "location": "India",
+  "focus": "Java Stack & AI Applications",
+  "goal": "Building cool, impactful projects"
+}

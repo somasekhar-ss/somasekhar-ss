@@ -1,0 +1,128 @@
+<svg width="1000" height="420" viewBox="0 0 1000 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #070B12; }
+      .panel { fill: #0C111B; stroke: #173248; stroke-width: 1; }
+      .grid-line { stroke: #12233A; stroke-width: 1; opacity: 0.4; }
+
+      .top-border {
+        stroke: #2EA8FF; stroke-width: 1.8; fill: none;
+        stroke-dasharray: 1000; stroke-dashoffset: 1000;
+        animation: draw 1.4s ease forwards;
+      }
+      .corner { fill: none; stroke: #2EA8FF; stroke-width: 1.5; opacity: 0.9; }
+      .divider { stroke: #173248; stroke-width: 1; }
+      .row-line { stroke: #12202f; stroke-width: 1; }
+
+      .section-label {
+        font-family: 'Courier New', Consolas, monospace; font-size: 13px;
+        fill: #4C7691; letter-spacing: 5px;
+      }
+      .pulse-dot { fill: #2EA8FF; animation: pulse 2.4s ease-in-out infinite; }
+
+      .item-text {
+        font-family: 'Courier New', Consolas, monospace; font-size: 16px;
+        fill: #E6EDF3;
+      }
+      .marker { fill: #2EA8FF; }
+
+      .status-tag { fill: none; stroke: #2EA8FF; stroke-width: 1; opacity: 0.7; }
+      .status-text {
+        font-family: 'Courier New', Consolas, monospace; font-size: 10.5px;
+        fill: #2EA8FF; letter-spacing: 1.5px;
+      }
+      .status-tag-hdr { fill: none; stroke: #2EA8FF; stroke-width: 1; }
+      .status-text-hdr {
+        font-family: 'Courier New', Consolas, monospace; font-size: 11px;
+        fill: #2EA8FF; letter-spacing: 2px;
+      }
+
+      .row { opacity: 0; transform: translateX(-8px); }
+      .row1 { animation: slide-in 0.5s 0.20s ease forwards; }
+      .row2 { animation: slide-in 0.5s 0.34s ease forwards; }
+      .row3 { animation: slide-in 0.5s 0.48s ease forwards; }
+      .row4 { animation: slide-in 0.5s 0.62s ease forwards; }
+      .row5 { animation: slide-in 0.5s 0.76s ease forwards; }
+
+      @keyframes draw { to { stroke-dashoffset: 0; } }
+      @keyframes slide-in { to { opacity: 1; transform: translateX(0); } }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.35; r: 3; }
+        50% { opacity: 1; r: 5; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="420" class="bg"/>
+  <rect x="20" y="20" width="960" height="380" rx="2" class="panel"/>
+
+  <!-- Faint grid -->
+  <g class="grid-line">
+    <line x1="20" y1="210" x2="980" y2="210" opacity="0.25"/>
+    <line x1="760" y1="20" x2="760" y2="400" opacity="0.2"/>
+  </g>
+
+  <!-- Animated top border -->
+  <line x1="20" y1="20" x2="980" y2="20" class="top-border"/>
+
+  <!-- Corner accents -->
+  <polyline points="20,38 20,20 38,20" class="corner"/>
+  <polyline points="980,38 980,20 962,20" class="corner"/>
+  <polyline points="20,382 20,400 38,400" class="corner"/>
+  <polyline points="980,382 980,400 962,400" class="corner"/>
+
+  <!-- Section label -->
+  <circle cx="46" cy="49" r="3" class="pulse-dot"/>
+  <text x="60" y="54" class="section-label">03 · CURRENT FOCUS</text>
+
+  <!-- Status tag top-right -->
+  <rect x="860" y="38" width="100" height="22" rx="2" class="status-tag-hdr"/>
+  <text x="878" y="53" class="status-text-hdr">5 ITEMS</text>
+
+  <line x1="40" y1="70" x2="960" y2="70" class="divider"/>
+
+  <!-- Row 1 -->
+  <g class="row row1">
+    <polygon points="46,105 52,111 46,117 40,111" class="marker"/>
+    <text x="68" y="115" class="item-text">Building scalable Spring Boot applications</text>
+    <rect x="810" y="97" width="150" height="24" rx="2" class="status-tag"/>
+    <text x="827" y="113" class="status-text">IN PROGRESS</text>
+  </g>
+  <line x1="40" y1="132" x2="960" y2="132" class="row-line"/>
+
+  <!-- Row 2 -->
+  <g class="row row2">
+    <polygon points="46,159 52,165 46,171 40,165" class="marker"/>
+    <text x="68" y="169" class="item-text">Solving Data Structures &amp; Algorithms consistently</text>
+    <rect x="810" y="151" width="150" height="24" rx="2" class="status-tag"/>
+    <text x="836" y="167" class="status-text">ONGOING</text>
+  </g>
+  <line x1="40" y1="186" x2="960" y2="186" class="row-line"/>
+
+  <!-- Row 3 -->
+  <g class="row row3">
+    <polygon points="46,213 52,219 46,225 40,219" class="marker"/>
+    <text x="68" y="223" class="item-text">Learning microservices architecture</text>
+    <rect x="810" y="205" width="150" height="24" rx="2" class="status-tag"/>
+    <text x="843" y="221" class="status-text">ACTIVE</text>
+  </g>
+  <line x1="40" y1="240" x2="960" y2="240" class="row-line"/>
+
+  <!-- Row 4 -->
+  <g class="row row4">
+    <polygon points="46,267 52,273 46,279 40,273" class="marker"/>
+    <text x="68" y="277" class="item-text">Exploring AWS cloud services</text>
+    <rect x="810" y="259" width="150" height="24" rx="2" class="status-tag"/>
+    <text x="843" y="275" class="status-text">ACTIVE</text>
+  </g>
+  <line x1="40" y1="294" x2="960" y2="294" class="row-line"/>
+
+  <!-- Row 5 -->
+  <g class="row row5">
+    <polygon points="46,321 52,327 46,333 40,327" class="marker"/>
+    <text x="68" y="331" class="item-text">Contributing to GitHub regularly</text>
+    <rect x="810" y="313" width="150" height="24" rx="2" class="status-tag"/>
+    <text x="836" y="329" class="status-text">ONGOING</text>
+  </g>
+</svg>

@@ -1,0 +1,149 @@
+<svg width="1000" height="500" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #070B12; }
+      .panel { fill: #0C111B; stroke: #173248; stroke-width: 1; }
+      .grid-line { stroke: #12233A; stroke-width: 1; opacity: 0.4; }
+
+      .top-border {
+        stroke: #2EA8FF; stroke-width: 1.8; fill: none;
+        stroke-dasharray: 1000; stroke-dashoffset: 1000;
+        animation: draw 1.4s ease forwards;
+      }
+      .corner { fill: none; stroke: #2EA8FF; stroke-width: 1.5; opacity: 0.9; }
+      .divider { stroke: #173248; stroke-width: 1; }
+      .row-line { stroke: #12202f; stroke-width: 1; }
+
+      .section-label {
+        font-family: 'Courier New', Consolas, monospace; font-size: 13px;
+        fill: #4C7691; letter-spacing: 5px;
+      }
+      .pulse-dot { fill: #2EA8FF; animation: pulse 2.4s ease-in-out infinite; }
+
+      .cat-label {
+        font-family: 'Courier New', Consolas, monospace; font-size: 12.5px;
+        fill: #73CFFF; letter-spacing: 2px;
+      }
+
+      .chip { fill: none; stroke: #2EA8FF; stroke-width: 1; opacity: 0.55; }
+      .chip-text {
+        font-family: 'Courier New', Consolas, monospace; font-size: 13px;
+        fill: #C7DCEA;
+      }
+
+      .chip-explore { fill: none; stroke: #F2B84B; stroke-width: 1; stroke-dasharray: 4,3; opacity: 0.8; }
+      .chip-explore-text {
+        font-family: 'Courier New', Consolas, monospace; font-size: 13px;
+        fill: #F2B84B;
+      }
+
+      .status-tag { fill: none; stroke: #2EA8FF; stroke-width: 1; }
+      .status-text {
+        font-family: 'Courier New', Consolas, monospace; font-size: 11px;
+        fill: #2EA8FF; letter-spacing: 2px;
+      }
+
+      .row { opacity: 0; transform: translateX(-8px); }
+      .row1 { animation: slide-in 0.5s 0.20s ease forwards; }
+      .row2 { animation: slide-in 0.5s 0.32s ease forwards; }
+      .row3 { animation: slide-in 0.5s 0.44s ease forwards; }
+      .row4 { animation: slide-in 0.5s 0.56s ease forwards; }
+      .row5 { animation: slide-in 0.5s 0.68s ease forwards; }
+      .row6 { animation: slide-in 0.5s 0.80s ease forwards; }
+
+      @keyframes draw { to { stroke-dashoffset: 0; } }
+      @keyframes slide-in { to { opacity: 1; transform: translateX(0); } }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.35; r: 3; }
+        50% { opacity: 1; r: 5; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="500" class="bg"/>
+  <rect x="20" y="20" width="960" height="460" rx="2" class="panel"/>
+
+  <!-- Faint grid -->
+  <g class="grid-line">
+    <line x1="20" y1="250" x2="980" y2="250" opacity="0.25"/>
+    <line x1="500" y1="20" x2="500" y2="480" opacity="0.2"/>
+  </g>
+
+  <!-- Animated top border -->
+  <line x1="20" y1="20" x2="980" y2="20" class="top-border"/>
+
+  <!-- Corner accents -->
+  <polyline points="20,38 20,20 38,20" class="corner"/>
+  <polyline points="980,38 980,20 962,20" class="corner"/>
+  <polyline points="20,462 20,480 38,480" class="corner"/>
+  <polyline points="980,462 980,480 962,480" class="corner"/>
+
+  <!-- Section label -->
+  <circle cx="46" cy="49" r="3" class="pulse-dot"/>
+  <text x="60" y="54" class="section-label">02 · TECH STACK</text>
+
+  <!-- Status tag top-right -->
+  <rect x="820" y="38" width="140" height="22" rx="2" class="status-tag"/>
+  <text x="838" y="53" class="status-text">6 CATEGORIES</text>
+
+  <line x1="40" y1="70" x2="960" y2="70" class="divider"/>
+
+  <!-- LANGUAGES -->
+  <g class="row row1">
+    <text x="46" y="122" class="cat-label">LANGUAGES</text>
+    <rect x="220" y="104" width="54" height="26" rx="3" class="chip"/><text x="232" y="122" class="chip-text">Java</text>
+    <rect x="284" y="104" width="47" height="26" rx="3" class="chip"/><text x="296" y="122" class="chip-text">SQL</text>
+    <rect x="341" y="104" width="99" height="26" rx="3" class="chip"/><text x="353" y="122" class="chip-text">JavaScript</text>
+    <rect x="450" y="104" width="54" height="26" rx="3" class="chip"/><text x="462" y="122" class="chip-text">HTML</text>
+    <rect x="514" y="104" width="47" height="26" rx="3" class="chip"/><text x="526" y="122" class="chip-text">CSS</text>
+  </g>
+  <line x1="40" y1="142" x2="960" y2="142" class="row-line"/>
+
+  <!-- BACKEND -->
+  <g class="row row2">
+    <text x="46" y="182" class="cat-label">BACKEND</text>
+    <rect x="220" y="164" width="107" height="26" rx="3" class="chip"/><text x="232" y="182" class="chip-text">Spring Boot</text>
+    <rect x="337" y="164" width="99" height="26" rx="3" class="chip"/><text x="349" y="182" class="chip-text">Spring MVC</text>
+    <rect x="446" y="164" width="144" height="26" rx="3" class="chip"/><text x="458" y="182" class="chip-text">Spring Data JPA</text>
+    <rect x="600" y="164" width="92" height="26" rx="3" class="chip"/><text x="612" y="182" class="chip-text">Hibernate</text>
+    <rect x="702" y="164" width="92" height="26" rx="3" class="chip"/><text x="714" y="182" class="chip-text">REST APIs</text>
+  </g>
+  <line x1="40" y1="202" x2="960" y2="202" class="row-line"/>
+
+  <!-- FRONTEND -->
+  <g class="row row3">
+    <text x="46" y="242" class="cat-label">FRONTEND</text>
+    <rect x="220" y="224" width="62" height="26" rx="3" class="chip"/><text x="232" y="242" class="chip-text">React</text>
+    <rect x="292" y="224" width="92" height="26" rx="3" class="chip"/><text x="304" y="242" class="chip-text">Bootstrap</text>
+  </g>
+  <line x1="40" y1="262" x2="960" y2="262" class="row-line"/>
+
+  <!-- DATABASES -->
+  <g class="row row4">
+    <text x="46" y="302" class="cat-label">DATABASES</text>
+    <rect x="220" y="284" width="69" height="26" rx="3" class="chip"/><text x="232" y="302" class="chip-text">MySQL</text>
+    <rect x="299" y="284" width="99" height="26" rx="3" class="chip"/><text x="311" y="302" class="chip-text">PostgreSQL</text>
+  </g>
+  <line x1="40" y1="322" x2="960" y2="322" class="row-line"/>
+
+  <!-- TOOLS -->
+  <g class="row row5">
+    <text x="46" y="362" class="cat-label">TOOLS</text>
+    <rect x="220" y="344" width="47" height="26" rx="3" class="chip"/><text x="232" y="362" class="chip-text">Git</text>
+    <rect x="277" y="344" width="69" height="26" rx="3" class="chip"/><text x="289" y="362" class="chip-text">GitHub</text>
+    <rect x="356" y="344" width="62" height="26" rx="3" class="chip"/><text x="368" y="362" class="chip-text">Maven</text>
+    <rect x="428" y="344" width="69" height="26" rx="3" class="chip"/><text x="440" y="362" class="chip-text">Docker</text>
+    <rect x="507" y="344" width="62" height="26" rx="3" class="chip"/><text x="519" y="362" class="chip-text">Linux</text>
+  </g>
+  <line x1="40" y1="382" x2="960" y2="382" class="row-line"/>
+
+  <!-- CURRENTLY EXPLORING -->
+  <g class="row row6">
+    <text x="46" y="422" class="cat-label">EXPLORING</text>
+    <rect x="220" y="404" width="47" height="26" rx="3" class="chip-explore"/><text x="232" y="422" class="chip-explore-text">AWS</text>
+    <rect x="277" y="404" width="122" height="26" rx="3" class="chip-explore"/><text x="289" y="422" class="chip-explore-text">Microservices</text>
+    <rect x="409" y="404" width="62" height="26" rx="3" class="chip-explore"/><text x="421" y="422" class="chip-explore-text">CI/CD</text>
+    <rect x="481" y="404" width="122" height="26" rx="3" class="chip-explore"/><text x="493" y="422" class="chip-explore-text">System Design</text>
+  </g>
+</svg>

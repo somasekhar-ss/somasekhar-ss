@@ -16,18 +16,7 @@
 
 ## [ 02 · TECH STACK ]
 
-<div align="center">
-<img src="https://skillicons.dev/icons?i=java,spring,react,js,html,css&theme=dark" />
-<br/>
-<img src="https://skillicons.dev/icons?i=mysql,postgres,docker,git,linux,maven,aws&theme=dark" />
-</div>
-
-**Languages** — Java · SQL · JavaScript · HTML · CSS
-**Backend** — Spring Boot · Spring MVC · Spring Data JPA · Hibernate · REST APIs
-**Frontend** — React · Bootstrap
-**Databases** — MySQL · PostgreSQL
-**Tools** — Git · GitHub · Maven · Docker · Linux
-**Currently Exploring** — AWS · Microservices · CI/CD · System Design
+<img src="./assets/tech.svg" width="100%" alt="Tech Stack"/>
 
 <br/>
 

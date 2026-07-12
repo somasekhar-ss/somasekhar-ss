@@ -53,9 +53,11 @@ I'm a Computer Science student focused on backend engineering and scalable softw
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-070b12?style=for-the-badge&logo=linkedin&logoColor=2EA8FF&labelColor=070b12)](https://www.linkedin.com/in/maddineni-soma-sekhar/)
-&nbsp;
-[![Email](https://img.shields.io/badge/EMAIL-070b12?style=for-the-badge&logo=gmail&logoColor=2EA8FF&labelColor=070b12)](mailto:ssnani192@gmail.com)
+<a href="https://www.linkedin.com/in/maddineni-soma-sekhar/"><img src="./assets/connect-linkedin.svg" height="46" alt="LinkedIn"/></a>&nbsp;&nbsp;<a href="mailto:ssnani192@gmail.com"><img src="./assets/connect-email.svg" height="46" alt="Email"/></a>
+
+<br/>
+
+<sub>First, solve the problem. Then, write the code.</sub>
 
 </div>
 

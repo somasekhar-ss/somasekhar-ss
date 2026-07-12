@@ -1,0 +1,161 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #070B12; }
+      .grid-line { stroke: #12233A; stroke-width: 1; opacity: 0.5; }
+
+      .top-border {
+        stroke: #2EA8FF; stroke-width: 1.5; fill: none;
+        stroke-dasharray: 900; stroke-dashoffset: 900;
+        animation: draw 1.6s ease forwards;
+      }
+      .side-line { stroke: #173248; stroke-width: 1; }
+
+      .corner { fill: none; stroke: #2EA8FF; stroke-width: 1.3; opacity: 0.9; }
+
+      .sidebar-label {
+        font-family: 'Courier New', Consolas, monospace; font-size: 9px;
+        fill: #4C7691; letter-spacing: 2px;
+      }
+      .sidebar-value {
+        font-family: 'Courier New', Consolas, monospace; font-size: 10px;
+        fill: #73CFFF; letter-spacing: 1px;
+      }
+
+      .sys-tag {
+        font-family: 'Courier New', Consolas, monospace; font-size: 11px;
+        fill: #4C7691; letter-spacing: 5px;
+        opacity: 0; animation: fade-in 0.6s 0.4s ease forwards;
+      }
+      .name {
+        font-family: 'Trebuchet MS', 'Segoe UI', sans-serif; font-size: 40px; font-weight: 700;
+        fill: #E6EDF3; letter-spacing: 5px;
+        opacity: 0; animation: fade-up 0.7s 0.6s ease forwards;
+      }
+      .role {
+        font-family: 'Courier New', Consolas, monospace; font-size: 14px;
+        fill: #2EA8FF; letter-spacing: 3px;
+        opacity: 0; animation: fade-up 0.7s 0.85s ease forwards;
+      }
+      .stack {
+        font-family: 'Courier New', Consolas, monospace; font-size: 11.5px;
+        fill: #8FA8BA; letter-spacing: 1px;
+        opacity: 0; animation: fade-up 0.7s 1.05s ease forwards;
+      }
+      .tagline {
+        font-family: 'Courier New', Consolas, monospace; font-size: 10.5px;
+        fill: #5E7A8C;
+        opacity: 0; animation: fade-in 0.8s 1.3s ease forwards;
+      }
+
+      .prompt {
+        font-family: 'Courier New', Consolas, monospace; font-size: 10px;
+        fill: #2EA8FF;
+        opacity: 0; animation: fade-in 0.6s 1.6s ease forwards;
+      }
+      .cursor {
+        fill: #2EA8FF;
+        animation: blink 1.1s steps(1) infinite;
+      }
+
+      .pulse-dot { fill: #2EA8FF; animation: pulse 2.4s ease-in-out infinite; }
+
+      .scan {
+        fill: url(#scanGradient);
+        opacity: 0;
+        animation: scan 5s 1.8s linear infinite;
+      }
+
+      @keyframes draw { to { stroke-dashoffset: 0; } }
+      @keyframes fade-in { to { opacity: 1; } }
+      @keyframes fade-up {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.35; r: 2.5; }
+        50% { opacity: 1; r: 4; }
+      }
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes scan {
+        0% { opacity: 0; transform: translateY(0); }
+        8% { opacity: 0.5; }
+        45% { opacity: 0.5; }
+        55% { opacity: 0; }
+        100% { opacity: 0; transform: translateY(280px); }
+      }
+    </style>
+
+    <linearGradient id="scanGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2EA8FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#2EA8FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2EA8FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="280" class="bg"/>
+
+  <!-- Faint blueprint grid -->
+  <g class="grid-line">
+    <line x1="0" y1="70" x2="900" y2="70"/>
+    <line x1="0" y1="210" x2="900" y2="210"/>
+    <line x1="150" y1="0" x2="150" y2="280"/>
+    <line x1="300" y1="0" x2="300" y2="280" opacity="0.3"/>
+    <line x1="600" y1="0" x2="600" y2="280" opacity="0.3"/>
+    <line x1="750" y1="0" x2="750" y2="280" opacity="0.3"/>
+  </g>
+
+  <!-- Scan line sweep -->
+  <rect x="0" y="0" width="900" height="18" class="scan"/>
+
+  <!-- Animated top border -->
+  <line x1="0" y1="2" x2="900" y2="2" class="top-border"/>
+
+  <!-- Corner accents -->
+  <polyline points="18,26 18,10 34,10" class="corner"/>
+  <polyline points="882,26 882,10 866,10" class="corner"/>
+  <polyline points="18,254 18,270 34,270" class="corner"/>
+  <polyline points="882,254 882,270 866,270" class="corner"/>
+
+  <!-- Sidebar divider -->
+  <line x1="150" y1="24" x2="150" y2="256" class="side-line"/>
+
+  <!-- Sidebar content -->
+  <circle cx="28" cy="42" r="2.5" class="pulse-dot"/>
+  <text x="40" y="46" class="sidebar-label">SYSTEM</text>
+
+  <text x="20" y="78" class="sidebar-label">STATUS</text>
+  <text x="20" y="93" class="sidebar-value">ACTIVE</text>
+
+  <text x="20" y="122" class="sidebar-label">BUILD</text>
+  <text x="20" y="137" class="sidebar-value">CONTINUOUS</text>
+
+  <text x="20" y="166" class="sidebar-label">FOCUS</text>
+  <text x="20" y="181" class="sidebar-value">BACKEND</text>
+
+  <text x="20" y="210" class="sidebar-label">VERSION</text>
+  <text x="20" y="225" class="sidebar-value">2026.1</text>
+
+  <!-- Main content -->
+  <text x="180" y="52" class="sys-tag">SYSTEM INITIALIZED</text>
+
+  <text x="180" y="102" class="name">SOMA SEKHAR</text>
+
+  <text x="182" y="128" class="role">JAVA BACKEND ENGINEER</text>
+
+  <text x="182" y="150" class="stack">Spring Boot · React · AWS · REST APIs</text>
+
+  <text x="182" y="178" class="tagline">Building scalable backend systems through</text>
+  <text x="182" y="193" class="tagline">clean architecture and continuous learning.</text>
+
+  <!-- Bottom divider -->
+  <line x1="150" y1="230" x2="880" y2="230" class="side-line"/>
+
+  <!-- Terminal prompt -->
+  <text x="182" y="252" class="prompt">&gt; system.ready</text>
+  <rect x="256" y="242" width="7" height="12" class="cursor"/>
+</svg>

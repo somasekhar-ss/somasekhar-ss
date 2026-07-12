@@ -1,0 +1,114 @@
+<svg width="1000" height="280" viewBox="0 0 1000 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #070B12; }
+      .panel { fill: #0C111B; stroke: #173248; stroke-width: 1; }
+      .grid-line { stroke: #12233A; stroke-width: 1; opacity: 0.4; }
+
+      .top-border {
+        stroke: #2EA8FF; stroke-width: 1.8; fill: none;
+        stroke-dasharray: 1000; stroke-dashoffset: 1000;
+        animation: draw 1.4s ease forwards;
+      }
+      .corner { fill: none; stroke: #2EA8FF; stroke-width: 1.5; opacity: 0.9; }
+      .divider { stroke: #173248; stroke-width: 1; }
+      .col-divider { stroke: #173248; stroke-width: 1; opacity: 0.7; }
+
+      .section-label {
+        font-family: 'Courier New', Consolas, monospace; font-size: 13px;
+        fill: #4C7691; letter-spacing: 5px;
+      }
+      .pulse-dot { fill: #2EA8FF; animation: pulse 2.4s ease-in-out infinite; }
+
+      .stat-label {
+        font-family: 'Courier New', Consolas, monospace; font-size: 11px;
+        fill: #4C7691; letter-spacing: 2.5px;
+      }
+      .stat-value {
+        font-family: 'Courier New', Consolas, monospace; font-size: 15px;
+        fill: #73CFFF; letter-spacing: 1px;
+      }
+
+      .tagline {
+        font-family: 'Courier New', Consolas, monospace; font-size: 14px;
+        fill: #8FA8BA; text-anchor: middle;
+      }
+
+      .prompt {
+        font-family: 'Courier New', Consolas, monospace; font-size: 14px;
+        fill: #2EA8FF;
+      }
+      .cursor {
+        fill: #2EA8FF;
+        animation: blink 1.1s steps(1) infinite;
+      }
+
+      .fade-1 { opacity: 0; animation: fade-in 0.6s 0.20s ease forwards; }
+      .fade-2 { opacity: 0; animation: fade-in 0.6s 0.45s ease forwards; }
+      .fade-3 { opacity: 0; animation: fade-in 0.6s 0.70s ease forwards; }
+      .fade-4 { opacity: 0; animation: fade-in 0.6s 0.95s ease forwards; }
+
+      @keyframes draw { to { stroke-dashoffset: 0; } }
+      @keyframes fade-in { to { opacity: 1; } }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.35; r: 3; }
+        50% { opacity: 1; r: 5; }
+      }
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="280" class="bg"/>
+  <rect x="20" y="20" width="960" height="220" rx="2" class="panel"/>
+
+  <!-- Faint grid -->
+  <g class="grid-line">
+    <line x1="330" y1="20" x2="330" y2="240" opacity="0.15"/>
+    <line x1="660" y1="20" x2="660" y2="240" opacity="0.15"/>
+  </g>
+
+  <!-- Animated top border -->
+  <line x1="20" y1="20" x2="980" y2="20" class="top-border"/>
+
+  <!-- Corner accents -->
+  <polyline points="20,38 20,20 38,20" class="corner"/>
+  <polyline points="980,38 980,20 962,20" class="corner"/>
+  <polyline points="20,222 20,240 38,240" class="corner"/>
+  <polyline points="980,222 980,240 962,240" class="corner"/>
+
+  <!-- Section label -->
+  <circle cx="46" cy="49" r="3" class="pulse-dot"/>
+  <text x="60" y="54" class="section-label">SYSTEM LOG</text>
+
+  <line x1="40" y1="70" x2="960" y2="70" class="divider"/>
+
+  <!-- Stat columns -->
+  <g class="fade-1">
+    <text x="70" y="98" class="stat-label">STATUS</text>
+    <text x="70" y="120" class="stat-value">ACTIVE</text>
+  </g>
+  <g class="fade-2">
+    <text x="400" y="98" class="stat-label">BUILD</text>
+    <text x="400" y="120" class="stat-value">CONTINUOUS</text>
+  </g>
+  <g class="fade-3">
+    <text x="730" y="98" class="stat-label">LAST UPDATE</text>
+    <text x="730" y="120" class="stat-value">2026</text>
+  </g>
+
+  <line x1="330" y1="82" x2="330" y2="130" class="col-divider"/>
+  <line x1="660" y1="82" x2="660" y2="130" class="col-divider"/>
+
+  <line x1="40" y1="150" x2="960" y2="150" class="divider"/>
+
+  <!-- Tagline -->
+  <text x="500" y="184" class="tagline fade-4">Building software. Learning continuously. Improving one commit at a time.</text>
+
+  <!-- Terminal prompt -->
+  <text x="46" y="218" class="prompt fade-4" textLength="220" lengthAdjust="spacingAndGlyphs">&gt; end_of_transmission</text>
+  <rect x="278" y="205" width="9" height="16" class="cursor fade-4"/>
+</svg>

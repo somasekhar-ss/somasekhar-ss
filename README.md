@@ -26,18 +26,7 @@
 
 <br/>
 
-## [ 04 · ABOUT ]
-
-I'm a Computer Science student focused on backend engineering and scalable software systems. I enjoy building Java applications with Spring Boot, exploring cloud technologies, and sharpening my problem-solving through Data Structures and Algorithms.
-
-<br/>
-
-## [ 05 · GITHUB ANALYTICS ]
-
-<div align="center">
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=somasekhar-ss&show_icons=true&count_private=true&theme=dark&bg_color=070b12&border_color=173248&title_color=2EA8FF&text_color=8FA8BA&icon_color=2EA8FF&rank_icon=github"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=somasekhar-ss&layout=compact&theme=dark&bg_color=070b12&border_color=173248&title_color=2EA8FF&text_color=8FA8BA"/>
-</div>
+## [ 04 · GITHUB ANALYTICS ]
 
 <div align="center">
 <img width="100%" src="https://github-readme-streak-stats.herokuapp.com?user=somasekhar-ss&theme=dark&background=070b12&border=173248&ring=2EA8FF&fire=2EA8FF&currStreakLabel=73CFFF&sideLabels=8FA8BA&sideNums=E6EDF3&dates=4C7691"/>
@@ -49,7 +38,7 @@ I'm a Computer Science student focused on backend engineering and scalable softw
 
 <br/>
 
-## [ 06 · CONNECT ]
+## [ 05 · CONNECT ]
 
 <div align="center">
 

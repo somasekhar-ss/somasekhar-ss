@@ -1,8 +1,6 @@
 <svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&amp;family=Share+Tech+Mono&amp;display=swap');
-
       .bg { fill: #070B12; }
       .grid-line { stroke: #12233A; stroke-width: 1; opacity: 0.5; }
 
@@ -16,42 +14,42 @@
       .corner { fill: none; stroke: #2EA8FF; stroke-width: 1.3; opacity: 0.9; }
 
       .sidebar-label {
-        font-family: 'Share Tech Mono', monospace; font-size: 9px;
+        font-family: 'Courier New', Consolas, monospace; font-size: 9px;
         fill: #4C7691; letter-spacing: 2px;
       }
       .sidebar-value {
-        font-family: 'Share Tech Mono', monospace; font-size: 10px;
+        font-family: 'Courier New', Consolas, monospace; font-size: 10px;
         fill: #73CFFF; letter-spacing: 1px;
       }
 
       .sys-tag {
-        font-family: 'Share Tech Mono', monospace; font-size: 11px;
+        font-family: 'Courier New', Consolas, monospace; font-size: 11px;
         fill: #4C7691; letter-spacing: 5px;
         opacity: 0; animation: fade-in 0.6s 0.4s ease forwards;
       }
       .name {
-        font-family: 'Orbitron', sans-serif; font-size: 40px; font-weight: 700;
-        fill: #E6EDF3; letter-spacing: 3px;
+        font-family: 'Trebuchet MS', 'Segoe UI', sans-serif; font-size: 40px; font-weight: 700;
+        fill: #E6EDF3; letter-spacing: 5px;
         opacity: 0; animation: fade-up 0.7s 0.6s ease forwards;
       }
       .role {
-        font-family: 'Share Tech Mono', monospace; font-size: 14px;
+        font-family: 'Courier New', Consolas, monospace; font-size: 14px;
         fill: #2EA8FF; letter-spacing: 3px;
         opacity: 0; animation: fade-up 0.7s 0.85s ease forwards;
       }
       .stack {
-        font-family: 'Share Tech Mono', monospace; font-size: 11.5px;
+        font-family: 'Courier New', Consolas, monospace; font-size: 11.5px;
         fill: #8FA8BA; letter-spacing: 1px;
         opacity: 0; animation: fade-up 0.7s 1.05s ease forwards;
       }
       .tagline {
-        font-family: 'Share Tech Mono', monospace; font-size: 10.5px;
+        font-family: 'Courier New', Consolas, monospace; font-size: 10.5px;
         fill: #5E7A8C;
         opacity: 0; animation: fade-in 0.8s 1.3s ease forwards;
       }
 
       .prompt {
-        font-family: 'Share Tech Mono', monospace; font-size: 10px;
+        font-family: 'Courier New', Consolas, monospace; font-size: 10px;
         fill: #2EA8FF;
         opacity: 0; animation: fade-in 0.6s 1.6s ease forwards;
       }

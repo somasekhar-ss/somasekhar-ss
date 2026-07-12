@@ -1,86 +1,90 @@
 <div align="center">
-  <img src="./header.svg" width="100%" alt="Soma Sekhar"/>
+  <img src="./assets/header.svg" width="100%" alt="Soma Sekhar"/>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=16&duration=2800&pause=900&color=1E6B9C&center=true&vCenter=true&multiline=false&width=750&lines=Rising+from+scratch.+Every+commit+a+step+up.;Java+Full-Stack+%C2%B7+Spring+Boot+%C2%B7+React+%C2%B7+DSA;Building+systems+that+scale.+One+line+at+a+time.;The+One+Who+Overcomes.+%E2%80%94+S-Class+%C2%B7+Ascending." alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=15&duration=2800&pause=900&color=2EA8FF&center=true&vCenter=true&multiline=false&width=750&lines=Building+scalable+backend+systems.;Java+%C2%B7+Spring+Boot+%C2%B7+React+%C2%B7+AWS;Learning+continuously.+Shipping+consistently." alt="Typing SVG"/>
 </div>
 
 <br/>
 
-## `[ 01 · HUNTER STATUS WINDOW ]`
+## [ 01 · PROFILE ]
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| **NAME** | Maddineni Soma Sekhar | **RANK** | 🟡 S-Class · Ascending |
-| **CLASS** | Java Full-Stack Developer | **TITLE** | "The One Who Overcomes" |
-| **FOCUS** | Backend · DSA · System Design | **SEEKING** | Full-Stack / Backend Roles |
-| **LOCATION** | Andhra Pradesh, India | **GUILD** | Open to Opportunities |
+| | |
+|---|---|
+| **Name** | Maddineni Soma Sekhar |
+| **Role** | Java Backend Engineer |
+| **Focus** | Backend Engineering · Spring Boot · Cloud |
+| **Currently Learning** | Microservices · Docker · AWS |
+| **Building** | Enterprise Java applications with clean architecture |
+| **Open To** | Internships · Full-Time Opportunities |
+| **Location** | Andhra Pradesh, India |
 
 <br/>
 
-## `[ 02 · REGISTERED SKILLS ]`
+## [ 02 · TECH STACK ]
 
 <div align="center">
-
 <img src="https://skillicons.dev/icons?i=java,spring,react,js,html,css&theme=dark" />
+<br/>
+<img src="https://skillicons.dev/icons?i=mysql,postgres,docker,git,linux,maven,aws&theme=dark" />
+</div>
 
-<b/>
+**Languages** — Java · SQL · JavaScript · HTML · CSS
+**Backend** — Spring Boot · Spring MVC · Spring Data JPA · Hibernate · REST APIs
+**Frontend** — React · Bootstrap
+**Databases** — MySQL · PostgreSQL
+**Tools** — Git · GitHub · Maven · Docker · Linux
+**Currently Exploring** — AWS · Microservices · CI/CD · System Design
 
-<img src="https://skillicons.dev/icons?i=mysql,postgres,docker,git,linux,maven&theme=dark" />
+<br/>
 
+## [ 03 · CURRENT FOCUS ]
+
+- Building scalable Spring Boot applications
+- Solving Data Structures & Algorithms problems consistently
+- Learning microservices architecture
+- Exploring AWS cloud services
+- Contributing to GitHub regularly
+
+<br/>
+
+## [ 04 · ABOUT ]
+
+I'm a Computer Science student focused on backend engineering and scalable software systems. I enjoy building Java applications with Spring Boot, exploring cloud technologies, and sharpening my problem-solving through Data Structures and Algorithms.
+
+<br/>
+
+## [ 05 · GITHUB ANALYTICS ]
+
+<div align="center">
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=somasekhar-ss&show_icons=true&count_private=true&theme=dark&bg_color=070b12&border_color=173248&title_color=2EA8FF&text_color=8FA8BA&icon_color=2EA8FF&rank_icon=github"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=somasekhar-ss&layout=compact&theme=dark&bg_color=070b12&border_color=173248&title_color=2EA8FF&text_color=8FA8BA"/>
+</div>
+
+<div align="center">
+<img width="100%" src="https://github-readme-streak-stats.herokuapp.com?user=somasekhar-ss&theme=dark&background=070b12&border=173248&ring=2EA8FF&fire=2EA8FF&currStreakLabel=73CFFF&sideLabels=8FA8BA&sideNums=E6EDF3&dates=4C7691"/>
+</div>
+
+<div align="center">
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=somasekhar-ss&bg_color=070b12&color=2EA8FF&line=2EA8FF&point=73CFFF&area=true&area_color=173248&hide_border=false&border_color=173248"/>
 </div>
 
 <br/>
 
-## `[ 03 · ABILITY STATS ]`
-
-<img src="./stats.svg" width="100%" alt="Ability Stats"/>
-
-<br/>
-
-## `[ 04 · ACTIVE QUESTS ]`
-
-<img src="./quests.svg" width="100%" alt="Active Quests"/>
-
-<br/>
-
-## `[ 05 · DUNGEON RECORDS ]`
+## [ 06 · CONNECT ]
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=somasekhar-ss&show_icons=true&count_private=true&theme=dark&bg_color=070b12&border_color=0e2235&title_color=1E6B9C&text_color=5ab4d4&icon_color=1E6B9C&rank_icon=github"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=somasekhar-ss&layout=compact&theme=dark&bg_color=070b12&border_color=0e2235&title_color=1E6B9C&text_color=5ab4d4"/>
-
-</div>
-
-<div align="center">
-
-<img width="100%" src="https://github-readme-streak-stats.herokuapp.com?user=somasekhar-ss&theme=dark&background=070b12&border=0e2235&ring=1E6B9C&fire=b8821e&currStreakLabel=5ab4d4&sideLabels=1e4a6a&sideNums=5ab4d4&dates=1e4a6a"/>
-
-</div>
-
-<div align="center">
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=somasekhar-ss&bg_color=070b12&color=1E6B9C&line=1E6B9C&point=5ab4d4&area=true&area_color=0e2235&hide_border=false&border_color=0e2235"/>
-
-</div>
-
-<br/>
-
-## `[ 06 · OPEN CHANNELS ]`
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/%5B_GITHUB_%5D-070b12?style=for-the-badge&logo=github&logoColor=1E6B9C&labelColor=070b12)](https://github.com/somasekhar-ss)
+[![GitHub](https://img.shields.io/badge/GITHUB-070b12?style=for-the-badge&logo=github&logoColor=2EA8FF&labelColor=070b12)](https://github.com/somasekhar-ss)
 &nbsp;
-[![LinkedIn](https://img.shields.io/badge/%5B_LINKEDIN_%5D-070b12?style=for-the-badge&logo=linkedin&logoColor=1E6B9C&labelColor=070b12)](https://linkedin.com/in/somasekhar-ss)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-070b12?style=for-the-badge&logo=linkedin&logoColor=2EA8FF&labelColor=070b12)](https://linkedin.com/in/somasekhar-ss)
 &nbsp;
-[![Email](https://img.shields.io/badge/%5B_MESSAGE_%5D-070b12?style=for-the-badge&logo=gmail&logoColor=1E6B9C&labelColor=070b12)](mailto:ssnani192@gmail.com)
+[![Email](https://img.shields.io/badge/EMAIL-070b12?style=for-the-badge&logo=gmail&logoColor=2EA8FF&labelColor=070b12)](mailto:ssnani192@gmail.com)
 &nbsp;
-[![LeetCode](https://img.shields.io/badge/%5B_LEETCODE_%5D-070b12?style=for-the-badge&logo=leetcode&logoColor=b8821e&labelColor=070b12)](https://leetcode.com/somasekhar-ss)
+[![LeetCode](https://img.shields.io/badge/LEETCODE-070b12?style=for-the-badge&logo=leetcode&logoColor=73CFFF&labelColor=070b12)](https://leetcode.com/somasekhar-ss)
 
 </div>
 
@@ -90,5 +94,15 @@
 
 <div align="center">
 
-```text
-SYSTEM  ·  "I alone level up"  ·  RISING FROM E-RANK  ·  NEVER STOPPING
+```
+SYSTEM LOG
+STATUS        ACTIVE
+BUILD         CONTINUOUS
+LAST UPDATE   2026
+
+Building software. Learning continuously. Improving one commit at a time.
+
+END OF TRANSMISSION
+```
+
+</div>

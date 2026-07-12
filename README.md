@@ -68,16 +68,5 @@ I'm a Computer Science student focused on backend engineering and scalable softw
 ---
 
 <div align="center">
-
-```
-SYSTEM LOG
-STATUS        ACTIVE
-BUILD         CONTINUOUS
-LAST UPDATE   2026
-
-Building software. Learning continuously. Improving one commit at a time.
-
-END OF TRANSMISSION
-```
-
+  <img src="./assets/footer.svg" width="100%" alt="System Log"/>
 </div>

@@ -22,11 +22,7 @@
 
 ## [ 03 · CURRENT FOCUS ]
 
-- Building scalable Spring Boot applications
-- Solving Data Structures & Algorithms problems consistently
-- Learning microservices architecture
-- Exploring AWS cloud services
-- Contributing to GitHub regularly
+<img src="./assets/focus.svg" width="100%" alt="Current Focus"/>
 
 <br/>
 

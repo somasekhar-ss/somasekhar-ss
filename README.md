@@ -26,6 +26,12 @@
 
 <br/>
 
+## [ 04 · ABOUT ]
+
+I'm a Computer Science student focused on backend engineering and scalable software systems. I enjoy building Java applications with Spring Boot, exploring cloud technologies, and sharpening my problem-solving through Data Structures and Algorithms.
+
+<br/>
+
 ## [ 05 · GITHUB ANALYTICS ]
 
 <div align="center">
@@ -38,7 +44,7 @@
 </div>
 
 <div align="center">
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=somasekhar-ss&bg_color=070b12&color=2EA8FF&line=2EA8FF&point=73CFFF&area=true&area_color=173248&hide_border=false&border_color=173248"/>
+<img width="100%" src="https://ghchart.rshah.org/2EA8FF/somasekhar-ss" alt="Soma Sekhar's contribution heatmap"/>
 </div>
 
 <br/>
@@ -46,10 +52,11 @@
 ## [ 06 · CONNECT ]
 
 <div align="center">
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-070b12?style=for-the-badge&logo=linkedin&logoColor=2EA8FF&labelColor=070b12)]([https://linkedin.com/in/somasekhar-ss](https://www.linkedin.com/in/maddineni-soma-sekhar/))
+
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-070b12?style=for-the-badge&logo=linkedin&logoColor=2EA8FF&labelColor=070b12)](https://www.linkedin.com/in/maddineni-soma-sekhar/)
 &nbsp;
-[![Email](https://img.shields.io/badge/EMAIL-070b12?style=for-the-badge&logo=gmail&logoColor=2EA8FF&labelColor=070b12)](ssnani192@gmail.com)
-&nbsp;
+[![Email](https://img.shields.io/badge/EMAIL-070b12?style=for-the-badge&logo=gmail&logoColor=2EA8FF&labelColor=070b12)](mailto:ssnani192@gmail.com)
+
 </div>
 
 <br/>

@@ -1,0 +1,16 @@
+<svg width="170" height="46" viewBox="0 0 170 46" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .btn { fill: #070B12; stroke: #2EA8FF; stroke-width: 1.3; }
+      .envelope { fill: none; stroke: #2EA8FF; stroke-width: 1.4; }
+      .label {
+        font-family: 'Courier New', Consolas, monospace; font-size: 13px; font-weight: bold;
+        fill: #E6EDF3; letter-spacing: 2px;
+      }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="168" height="44" rx="4" class="btn"/>
+  <rect x="16" y="14" width="26" height="18" rx="2" class="envelope"/>
+  <polyline points="16,16 29,26 42,16" class="envelope"/>
+  <text x="54" y="28" class="label">EMAIL</text>
+</svg>

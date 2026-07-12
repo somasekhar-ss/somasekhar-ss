@@ -1,132 +1,75 @@
-<svg width="900" height="300" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
-
-      .bg { fill: #070b12; }
-      .glow-line { stroke: #1a6a9c; stroke-width: 1; fill: none; opacity: 0.6; }
-      .top-line { stroke: #1a6a9c; stroke-width: 1.5; fill: none;
-        stroke-dasharray: 900; stroke-dashoffset: 900;
-        animation: draw-line 1.4s ease forwards; }
-      .side-accent { fill: none; stroke: #0e4a6e; stroke-width: 0.5; }
-      .sys-label { font-family: 'Share Tech Mono', 'Courier New', monospace;
-        font-size: 10px; fill: #1e4a6a; letter-spacing: 4px; }
-      .sys-label-anim { font-family: 'Share Tech Mono', 'Courier New', monospace;
-        font-size: 10px; fill: #1e4a6a; letter-spacing: 4px;
-        opacity: 0; animation: fade-in 0.6s 0.8s ease forwards; }
-      .rank-badge { font-family: 'Share Tech Mono', 'Courier New', monospace;
-        font-size: 10px; fill: #b8821e; letter-spacing: 3px;
-        opacity: 0; animation: fade-in 0.5s 0.5s ease forwards; }
-      .main-name { font-family: 'Share Tech Mono', 'Courier New', monospace;
-        font-size: 52px; font-weight: bold; fill: #e2eaf0; letter-spacing: 6px;
-        opacity: 0; animation: fade-up 0.7s 0.3s ease forwards; }
-      .sub-title { font-family: 'Share Tech Mono', 'Courier New', monospace;
-        font-size: 12px; fill: #1e6b9c; letter-spacing: 4px;
-        opacity: 0; animation: fade-up 0.7s 0.5s ease forwards; }
-      .hunter-id { font-family: 'Share Tech Mono', 'Courier New', monospace;
-        font-size: 9px; fill: #0e3a52; letter-spacing: 3px; }
-      .divider { stroke: #0e2235; stroke-width: 1; }
-      .corner-tl { fill: none; stroke: #1e6b9c; stroke-width: 1.5; }
-      .pulse-dot { fill: #1e6b9c;
-        animation: pulse 2s ease-in-out infinite; }
-      .pulse-dot-2 { fill: #b8821e;
-        animation: pulse 2s 0.6s ease-in-out infinite; }
-      .scan-line { fill: #1e6b9c; opacity: 0;
-        animation: scan 3s 1.5s linear infinite; }
-
-      @keyframes draw-line {
-        to { stroke-dashoffset: 0; }
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+      .bg{fill:#070b12;}
+      .grid{stroke:#0e2235;stroke-width:.6;opacity:.35}
+      .title{font:11px 'Share Tech Mono',monospace;fill:#5ab4d4;letter-spacing:4px}
+      .name{font:bold 46px 'Share Tech Mono',monospace;fill:#e6edf3;letter-spacing:5px}
+      .role{font:15px 'Share Tech Mono',monospace;fill:#1e6b9c;letter-spacing:2px}
+      .desc{font:12px 'Share Tech Mono',monospace;fill:#8ba3b7}
+      .small{font:10px 'Share Tech Mono',monospace;fill:#5ab4d4;letter-spacing:2px}
+      .border{fill:none;stroke:#1e6b9c;stroke-width:1.5;stroke-dasharray:2400;stroke-dashoffset:2400;
+      animation:draw 2s ease forwards;}
+      .scan{fill:#5ab4d4;opacity:.05;animation:scan 4s linear infinite;}
+      .dot{fill:#1e6b9c;animation:pulse 2s ease-in-out infinite;}
+      @keyframes draw{to{stroke-dashoffset:0}}
+      @keyframes pulse{50%{opacity:.3}100%{opacity:1}}
+      @keyframes scan{
+        0%{transform:translateY(-10px)}
+        100%{transform:translateY(310px)}
       }
-      @keyframes fade-in {
-        to { opacity: 1; }
-      }
-      @keyframes fade-up {
-        from { opacity: 0; transform: translateY(12px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes pulse {
-        0%, 100% { opacity: 0.3; r: 3; }
-        50% { opacity: 1; r: 4.5; }
-      }
-      @keyframes scan {
-        0% { opacity: 0; transform: translateY(0); }
-        10% { opacity: 0.04; }
-        90% { opacity: 0.04; }
-        100% { opacity: 0; transform: translateY(300px); }
-      }
-      @keyframes ring-pulse {
-        0%, 100% { opacity: 0.06; r: 60; }
-        50% { opacity: 0.12; r: 66; }
-      }
-      @keyframes ring-pulse-2 {
-        0%, 100% { opacity: 0.04; r: 90; }
-        50% { opacity: 0.09; r: 98; }
-      }
-      .ring-1 { fill: none; stroke: #1e6b9c; stroke-width: 0.5;
-        animation: ring-pulse 3s ease-in-out infinite; }
-      .ring-2 { fill: none; stroke: #1e6b9c; stroke-width: 0.5;
-        animation: ring-pulse-2 3s 0.8s ease-in-out infinite; }
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="300" class="bg"/>
+  <rect class="bg" width="900" height="300"/>
 
-  <!-- Subtle gate rings (top-left) -->
-  <circle cx="80" cy="150" class="ring-1" r="60"/>
-  <circle cx="80" cy="150" class="ring-2" r="90"/>
+  <!-- grid -->
+  <g>
+    <line class="grid" x1="0" y1="60" x2="900" y2="60"/>
+    <line class="grid" x1="0" y1="120" x2="900" y2="120"/>
+    <line class="grid" x1="0" y1="180" x2="900" y2="180"/>
+    <line class="grid" x1="0" y1="240" x2="900" y2="240"/>
+    <line class="grid" x1="150" y1="0" x2="150" y2="300"/>
+    <line class="grid" x1="300" y1="0" x2="300" y2="300"/>
+    <line class="grid" x1="450" y1="0" x2="450" y2="300"/>
+    <line class="grid" x1="600" y1="0" x2="600" y2="300"/>
+    <line class="grid" x1="750" y1="0" x2="750" y2="300"/>
+  </g>
 
-  <!-- Grid lines (very subtle) -->
-  <line x1="0" y1="60" x2="900" y2="60" class="glow-line" opacity="0.15"/>
-  <line x1="0" y1="240" x2="900" y2="240" class="glow-line" opacity="0.15"/>
-  <line x1="160" y1="0" x2="160" y2="300" class="glow-line" opacity="0.1"/>
+  <rect class="border" x="10" y="10" width="880" height="280"/>
 
-  <!-- Animated top border -->
-  <line x1="0" y1="2" x2="900" y2="2" class="top-line"/>
+  <!-- corners -->
+  <path d="M10 30V10H30M890 30V10H870M10 270V290H30M890 270V290H870"
+        fill="none" stroke="#5ab4d4" stroke-width="2"/>
 
-  <!-- Corner accents -->
-  <polyline points="20,20 20,8 32,8" class="corner-tl"/>
-  <polyline points="880,20 880,8 868,8" class="corner-tl"/>
-  <polyline points="20,280 20,292 32,292" class="corner-tl"/>
-  <polyline points="880,280 880,292 868,292" class="corner-tl"/>
+  <rect class="scan" x="0" y="0" width="900" height="2"/>
 
-  <!-- Scan line animation -->
-  <rect x="0" y="0" width="900" height="2" class="scan-line"/>
+  <circle class="dot" cx="40" cy="35" r="3"/>
+  <circle class="dot" cx="52" cy="35" r="3"/>
+  <circle class="dot" cx="64" cy="35" r="3"/>
 
-  <!-- Left column details -->
-  <text x="30" y="52" class="hunter-id">ID:SS-2024</text>
-  <circle cx="30" cy="90" r="3" class="pulse-dot"/>
-  <text x="40" y="94" class="hunter-id">ONLINE</text>
-  <circle cx="30" cy="115" r="3" class="pulse-dot-2"/>
-  <text x="40" y="119" class="hunter-id">S-CLASS</text>
+  <text x="450" y="60" text-anchor="middle" class="title">// SOFTWARE ENGINEERING PORTFOLIO</text>
 
-  <!-- Vertical separator -->
-  <line x1="155" y1="30" x2="155" y2="270" class="divider"/>
+  <text x="450" y="135" text-anchor="middle" class="name">MADDINENI SOMA SEKHAR</text>
 
-  <!-- Main content area -->
-  <!-- Top system label -->
-  <text x="450" y="65" text-anchor="middle" class="sys-label-anim">
-    // HUNTER SYSTEM — AUTHORIZATION GRANTED
+  <text x="450" y="170" text-anchor="middle" class="role">
+    JAVA FULL-STACK DEVELOPER
   </text>
 
-  <!-- Rank badge -->
-  <text x="450" y="105" text-anchor="middle" class="rank-badge">
-    [ S-RANK · ASCENDING ]
+  <text x="450" y="195" text-anchor="middle" class="desc">
+    Spring Boot • React • AWS • Backend Engineering
   </text>
 
-  <!-- Main name -->
-  <text x="450" y="175" text-anchor="middle" class="main-name">
-    SOMA SEKHAR
+  <text x="450" y="220" text-anchor="middle" class="desc">
+    Building reliable software through continuous learning and real-world projects.
   </text>
 
-  <!-- Subtitle -->
-  <text x="450" y="210" text-anchor="middle" class="sub-title">
-    JAVA FULL-STACK DEVELOPER · ANDHRA PRADESH, IN
-  </text>
+  <line x1="180" y1="245" x2="720" y2="245" stroke="#0e2235"/>
 
-  <!-- Bottom divider + hunter ID -->
-  <line x1="200" y1="230" x2="700" y2="230" class="divider"/>
-  <text x="450" y="255" text-anchor="middle" class="sys-label" opacity="0.5">
-    MADDINENI SOMA SEKHAR · SS-2024-001 · "THE ONE WHO OVERCOMES"
-  </text>
+  <text x="140" y="270" class="small">|STATUS|  --ACTIVE</text>
+  <text x="360" y="270" class="small">|LOCATION|  --INDIA</text>
+  <text x="590" y="270" class="small">|FOCUS|  --JAVA FULL STACK</text>
+  <text x="760" y="270" class="small">|UPDATED|  --2026</text>
 </svg>

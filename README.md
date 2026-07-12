@@ -44,7 +44,7 @@ I'm a Computer Science student focused on backend engineering and scalable softw
 </div>
 
 <div align="center">
-<img width="100%" src="https://ghchart.rshah.org/2EA8FF/somasekhar-ss" alt="Soma Sekhar's contribution heatmap"/>
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=somasekhar-ss&bg_color=070b12&color=2EA8FF&line=2EA8FF&point=73CFFF&area=true&area_color=173248&hide_border=false&border_color=173248"/>
 </div>
 
 <br/>

@@ -1,0 +1,136 @@
+<svg width="1000" height="380" viewBox="0 0 1000 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #070B12; }
+      .panel { fill: #0C111B; stroke: #173248; stroke-width: 1; }
+      .grid-line { stroke: #12233A; stroke-width: 1; opacity: 0.4; }
+
+      .top-border {
+        stroke: #2EA8FF; stroke-width: 1.8; fill: none;
+        stroke-dasharray: 1000; stroke-dashoffset: 1000;
+        animation: draw 1.4s ease forwards;
+      }
+      .corner { fill: none; stroke: #2EA8FF; stroke-width: 1.5; opacity: 0.9; }
+      .divider { stroke: #173248; stroke-width: 1; }
+      .row-line { stroke: #12202f; stroke-width: 1; }
+
+      .section-label {
+        font-family: 'Courier New', Consolas, monospace; font-size: 13px;
+        fill: #4C7691; letter-spacing: 5px;
+      }
+      .pulse-dot { fill: #2EA8FF; animation: pulse 2.4s ease-in-out infinite; }
+
+      .key {
+        font-family: 'Courier New', Consolas, monospace; font-size: 12.5px;
+        fill: #4C7691; letter-spacing: 2px;
+      }
+      .val {
+        font-family: 'Courier New', Consolas, monospace; font-size: 16px;
+        fill: #E6EDF3;
+      }
+      .val-accent {
+        font-family: 'Courier New', Consolas, monospace; font-size: 16px;
+        fill: #2EA8FF;
+      }
+      .val-muted {
+        font-family: 'Courier New', Consolas, monospace; font-size: 14.5px;
+        fill: #8FA8BA;
+      }
+
+      .row { opacity: 0; transform: translateX(-8px); }
+      .row1 { animation: slide-in 0.5s 0.20s ease forwards; }
+      .row2 { animation: slide-in 0.5s 0.32s ease forwards; }
+      .row3 { animation: slide-in 0.5s 0.44s ease forwards; }
+      .row4 { animation: slide-in 0.5s 0.56s ease forwards; }
+      .row5 { animation: slide-in 0.5s 0.68s ease forwards; }
+      .row6 { animation: slide-in 0.5s 0.80s ease forwards; }
+      .row7 { animation: slide-in 0.5s 0.92s ease forwards; }
+
+      .status-tag {
+        fill: none; stroke: #2EA8FF; stroke-width: 1;
+      }
+      .status-text {
+        font-family: 'Courier New', Consolas, monospace; font-size: 11px;
+        fill: #2EA8FF; letter-spacing: 2px;
+      }
+
+      @keyframes draw { to { stroke-dashoffset: 0; } }
+      @keyframes slide-in { to { opacity: 1; transform: translateX(0); } }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.35; r: 3; }
+        50% { opacity: 1; r: 5; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="380" class="bg"/>
+  <rect x="20" y="20" width="960" height="340" rx="2" class="panel"/>
+
+  <!-- Faint grid -->
+  <g class="grid-line">
+    <line x1="20" y1="200" x2="980" y2="200" opacity="0.25"/>
+    <line x1="420" y1="20" x2="420" y2="360" opacity="0.25"/>
+  </g>
+
+  <!-- Animated top border -->
+  <line x1="20" y1="20" x2="980" y2="20" class="top-border"/>
+
+  <!-- Corner accents -->
+  <polyline points="20,38 20,20 38,20" class="corner"/>
+  <polyline points="980,38 980,20 962,20" class="corner"/>
+  <polyline points="20,342 20,360 38,360" class="corner"/>
+  <polyline points="980,342 980,360 962,360" class="corner"/>
+
+  <!-- Section label -->
+  <circle cx="46" cy="49" r="3" class="pulse-dot"/>
+  <text x="60" y="54" class="section-label">01 · PROFILE</text>
+
+  <!-- Status tag top-right -->
+  <rect x="860" y="38" width="100" height="22" rx="2" class="status-tag"/>
+  <text x="878" y="53" class="status-text">ACTIVE</text>
+
+  <line x1="40" y1="70" x2="960" y2="70" class="divider"/>
+
+  <!-- Rows -->
+  <g class="row row1">
+    <text x="46" y="105" class="key">NAME</text>
+    <text x="220" y="109" class="val">Maddineni Soma Sekhar</text>
+  </g>
+  <line x1="40" y1="122" x2="960" y2="122" class="row-line"/>
+
+  <g class="row row2">
+    <text x="46" y="145" class="key">ROLE</text>
+    <text x="220" y="149" class="val-accent">Java Backend Engineer</text>
+  </g>
+  <line x1="40" y1="162" x2="960" y2="162" class="row-line"/>
+
+  <g class="row row3">
+    <text x="46" y="185" class="key">FOCUS</text>
+    <text x="220" y="189" class="val-muted">Backend Engineering · Spring Boot · Cloud</text>
+  </g>
+  <line x1="40" y1="202" x2="960" y2="202" class="row-line"/>
+
+  <g class="row row4">
+    <text x="46" y="225" class="key">LEARNING</text>
+    <text x="220" y="229" class="val-muted">Microservices · Docker · AWS</text>
+  </g>
+  <line x1="40" y1="242" x2="960" y2="242" class="row-line"/>
+
+  <g class="row row5">
+    <text x="46" y="265" class="key">BUILDING</text>
+    <text x="220" y="269" class="val-muted">Enterprise Java Applications</text>
+  </g>
+  <line x1="40" y1="282" x2="960" y2="282" class="row-line"/>
+
+  <g class="row row6">
+    <text x="46" y="305" class="key">OPEN TO</text>
+    <text x="220" y="309" class="val-muted">Internships · Full-Time Opportunities</text>
+  </g>
+  <line x1="40" y1="322" x2="960" y2="322" class="row-line"/>
+
+  <g class="row row7">
+    <text x="46" y="345" class="key">LOCATION</text>
+    <text x="220" y="349" class="val-muted">Andhra Pradesh, India</text>
+  </g>
+</svg>

@@ -10,17 +10,7 @@
 
 <br/>
 
-## [ 01 · PROFILE ]
-
-| | |
-|---|---|
-| **Name** | Maddineni Soma Sekhar |
-| **Role** | Java Backend Engineer |
-| **Focus** | Backend Engineering · Spring Boot · Cloud |
-| **Currently Learning** | Microservices · Docker · AWS |
-| **Building** | Enterprise Java applications with clean architecture |
-| **Open To** | Internships · Full-Time Opportunities |
-| **Location** | Andhra Pradesh, India |
+<img src="./assets/profile.svg" width="100%" alt="Profile"/>
 
 <br/>
 
